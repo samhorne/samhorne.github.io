@@ -1,132 +1,81 @@
----
-layout: default
----
-
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #f1f1f1;
-  padding: 20px;
-  font-family: Arial;
-}
-
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
-
-h1 {
-  font-size: 50px;
-  word-break: break-all;
-}
-
-.row {
-  margin: 8px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
-}
-
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-}
-
-/* Clear floats after rows */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
-
-img {
-  object-fit:cover;
-  width: 100%;
-  height: 10%;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
-<!-- MAIN (Center website) -->
-<div class="main">
+  <script src="script.js"></script>
 
-<h1>Sam Horne</h1>
-<hr>
+  <!-- Responsive Header -->
+  <nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+      <i class="fas fa-bars"></i>
+    </span>
+    <a href="#" class="logo">Sam Horne</a>
+    <ul class="main-nav" id="js-menu">
+      <li>
+        <a href="#projects" class="nav-links">Projects</a>
+      </li>
+      <li>
+        <a href="#contact" class="nav-links">Contact</a>
+      </li>
+    </ul>
+  </nav>
 
-<h2>PORTFOLIO</h2>
+  <!-- MAIN (Center website) -->
+  <div class="main" id ="projects">
 
-<!-- Portfolio Gallery Grid -->
-<div class="row">
-  <div class="column">
-    <div class="content">
-      <a href="https://github.com/samhorne/lasermaze2019"><img src="images/lasermaze.JPG" alt="Mountains">
-      <h3>2019 Laser Maze</h3></a>
-      <p>An epic immersive experience featuring Python control, a custom iOS app, MQTT triggered videos and lighting, and a realtime leaderboard.</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <img src="images/paradox2.PNG" alt="Lights">
-      <h3>Paradox2</h3>
-      <p>An augmented reality mask which reveals a code when correctly overlayed with the scrambled numbers.</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <img src="simulator.png" alt="Nature">
-      <h3>Roller Coaster Safety STEM Workshop</h3>
-      <p>Arduino + Processing simulator which demonstrates the functionality of safety mats in a roller coaster.</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <a href=https://www.hackster.io/samhorne/scavenger-hunt-cluephone-51c46c><img src="cluephone.png" alt="Mountains">
-      <h3>Scavenger Hunt CluePhone</h3></a>
-      <p>Old landline phone adapted to deliver morse code clues upon correct passcode entry.</p>
-    </div>
-  </div>
-<!-- END GRID -->
+    <h2>Projects</h2>
 
-</body>
-</html>
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column">
+        <div class="content">
+          <a href="https://github.com/samhorne/lasermaze2019"><img src="images/lasermaze.JPG" alt="Mountains">
+            <h3>2019 Laser Maze</h3></a>
+            <p>An epic immersive experience featuring Python control, a custom iOS app, MQTT triggered videos and lighting, and a realtime leaderboard.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src="images/paradox2.PNG" alt="Lights">
+            <h3>Paradox2</h3>
+            <p>An augmented reality mask which reveals a code when correctly overlayed with the scrambled numbers.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src="images/simulator.png" alt="Nature">
+            <h3>Roller Coaster Safety STEM Workshop</h3>
+            <p>Arduino + Processing simulator which demonstrates the functionality of safety mats in a roller coaster.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <a href=https://www.hackster.io/samhorne/scavenger-hunt-cluephone-51c46c><img src="images/cluephone.png" alt="Mountains">
+              <h3>Scavenger Hunt CluePhone</h3></a>
+              <p>Old landline phone adapted to deliver morse code clues upon correct passcode entry.</p>
+            </div>
+          </div>
+          <!-- END GRID -->
+        </div>
+
+
+        <h2>Contact</h2>
+      </body>
+
+      <div class = "footer" id="contact">
+        <!--
+        <p class="copyright">&copy; Sam Horne <script type="text/JavaScript">
+        document.write(new Date().getFullYear());
+      </script></p> -->
+      <ul>
+        <li><a href="https://mailhide.io/e/3q4pI"><img src="images/email.png" alt="Github"/></a></li>
+        <li><a href="http://linkedin.com/in/sam-horne/"><img src="images/linkedin.png" alt="LinkedIn"/></a></li>
+        <li><a href="https://github.com/samhorne"><img src="images/github.png" alt="Github"/></a></li>
+      </ul>
+    </div>
+
+    </html>

@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 80px;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.navbar {
+  font-size: 18px;
+  background-image: linear-gradient(260deg, #08836b 0%, #2376ae 100%);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+  position: fixed;
+  width: 100%;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+}
+
+.active {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .logo:hover,
+  .nav-links:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+/* Footer Styles */
+.footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+}
+
+.footer ul {
+	float: left;
+	padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.footer li {
+	list-style: none;
+	display: inline;
+}
+
+.footer a:hover {
+	opacity: .75;
+}
+
+.footer p {
+	font-size: 20px;
+	color: white;
+	display: inline-block;
+}
+
+.footer img {
+	float: left;
+  width: 70px;
+}
+
+p.email {
+	float: left;
+	padding-left: 10px;
+	/*margin-bottom: 0;*/
+}
+
+p.copyright {
+	float: left;
+	padding-left: 10px;
+	/*margin-bottom: 0;*/
+}
+
+.footer a {
+	text-decoration: none;
+	color: #DFC24A;
+	text-shadow: 0px 2px 3px rgba(43,43,43,0.15);
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
