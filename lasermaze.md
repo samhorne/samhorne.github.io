@@ -13,7 +13,7 @@ Epic immersive experience featuring Python control, a custom iOS app, MQTT trigg
 
 ### Parts
 
-| Quality | Item |                                                                                                      
+| Quality | Item |                                                                                               
 |----------|:-----------|
 | 1        | [Raspberry Pi with SD Card](raspberry.org) |                                                                                                                                                                
 | 1        | [Screw Terminal Hat](https://www.amazon.com/Electronics-Salon-Terminal-Breakout-Module-Raspberry/dp/B01M27459S/ref=sr_1_2) |           
@@ -36,6 +36,7 @@ Epic immersive experience featuring Python control, a custom iOS app, MQTT trigg
 | | Scrap Wood |
 |24| Plastic Food Container|
 || Diffused Plastic Wrap|
+
 ### Lasers
 
 Each laser module is constructed with a pan/tilt bracket made from scrap wood. Barrel jack connectors make connection very quick.
