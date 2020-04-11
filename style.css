@@ -9,49 +9,22 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 
-/* Center website */
 .main {
-  max-width: 1000px;
+  max-width: 1300px;
   margin: auto;
   padding-top: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-h1 {
-  font-size: 50px;
-  word-break: break-all;
-}
-
-.row {
-  margin: 8px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
+.content {
   padding: 8px;
 }
 
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-}
-
-/* Clear floats after rows */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
-
 img {
+  display: block;
   width: 100%;
+  object-fit: cover;
 }
 
 a {
@@ -62,17 +35,41 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
+.grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /*grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));*/
+  grid-gap: 20px;
+}
+
+.card {
+
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
+    border: 3px solid #fff;
+    align-items: center;
+    /* padding: 10px; */
+    border-radius: 6px;
+    transition: all 250ms;
+    background-color: white;
+}
+
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 1000px){
+  .grid{
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
+@media (max-width: 600px){
+  .grid{
+    grid-template-columns: 1fr;
   }
 }
 
