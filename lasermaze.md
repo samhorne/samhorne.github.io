@@ -41,13 +41,26 @@ Epic immersive experience featuring Python control, a custom iOS app, MQTT trigg
 
 Each laser module is constructed with a pan/tilt bracket made from scrap wood. Barrel jack connectors make connection very quick.
 
+<img src="/images/laser.jpg" width=50%>
+<img src="/images/laser_side.jpg" width=50%>
+<img src="/images/wire.jpg" width=50%>
+
 Since 24 laser modules draw more current than a Raspberry Pi can handle and since they run at 5V instead of 3.3V, transistor arrays are used to offload this power from the Pi to the power supply. Each pin on the Pi triggers an individual transistor on the array with minimal current draw.
 Components are mounted to a DIN rail for rugged and reliable performance.
-![enter image description here](/images/lasersTB.JPG)
+<img src="/images/lasersTB.JPG" width=50%>
 ### Sensors
 Raspberry Pi does not have an Analog to Digital Converter (ADC) built in. This means that reading analog sensors is not possible without an external ADC. This project uses a 32 channel I2C ADC to read each sensor individually. Each ACD input has a 10kΩ resistor in parallel to ground for voltage division. Pairing the ADC with RJ45 breakouts means all sensors can be mounted on an opposite wall, with a single CAT5 cable connected back to the Pi.
-![enter image description here](/images/sensorsTB.JPG)
+
+<img src="/images/sensorsTB.JPG" width=50%>
+
 ***Lesson Learned:*** I2C has distance limitations! My first attempt using a 100 ft cable failed miserably. Be sure to research the distance limitations before using a long cable, or incorporate an I2C extender.
 
 ### Button
 Placing a large emergency stop button at the end of the maze allows participants to "win" the maze and deactivate the lasers. The button is connected to a Raspberry Pi pin.
+
+<img src="/images/button.jpg" width=50%>
+
+### DMX Control
+A USB to DMX interface allows control of theatrical lighting fixtures.
+
+<img src="/images/dmx.jpg" width=50%>
