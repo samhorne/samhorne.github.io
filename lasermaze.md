@@ -20,7 +20,8 @@ Epic immersive experience featuring Python control, a custom iOS app, MQTT trigg
 | 1        | [5V Power Supply](https://www.amazon.com/gp/product/B005T6SAJI/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1)   |                    
 | 3        | [8 channel Transistor Array](https://www.aliexpress.com/item/32908019845.html?spm=a2g0s.9042311.0.0.5f0b4c4dBp5TRG)     |                  
 | 24       | [Laser Modules](https://www.ebay.com/itm/10pcs-650nm-6mm-5V-5mW-Red-Laser-Dot-Diode-Module-US/192413550626?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2057872.m2749.l2649)     |                                                                          
-| 1        | [32 channel Analog to Digital Converter](https://www.tindie.com/products/fercsa/32-channel-adc-wi2c-for-arduino-raspberry-pi/)      |      
+| 1        | [32 channel Analog to Digital Converter](https://www.tindie.com/products/fercsa/32-channel-adc-wi2c-for-arduino-raspberry-pi/)      |  
+| 1        | [10kΩ resistors](https://www.amazon.com/EDGELEC-Resistor-Tolerance-Resistance-Optional/dp/B07HDGX5LM/r)
 | 24       | [Photoresistor](https://www.ebay.com/itm/50PCS-Photo-Light-Sensitive-Resistor-Photoresistor-Optoresistor-5mm-GL5528/401124461901?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2057872.m2749.l2649)      |                                                   
 | 1        | [Emergency Stop Button](https://www.amazon.com/gp/product/B005YX0A1M/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)   |                  
 | 48       | [Barrel Jack Plugs (Male)](https://www.ebay.com/myb/PurchaseHistory#PurchaseHistoryOrdersContainer?ipp=25&Period=3&cmid=2749&_trksid=p2057872.m2749.l5117)    |                                                                                          
@@ -49,7 +50,7 @@ Since 24 laser modules draw more current than a Raspberry Pi can handle and sinc
 Components are mounted to a DIN rail for rugged and reliable performance.
 <img src="/images/lasersTB.JPG" width=50%>
 ### Sensors
-Raspberry Pi does not have an Analog to Digital Converter (ADC) built in. This means that reading analog sensors is not possible without an external ADC. This project uses a 32 channel I2C ADC to read each sensor individually. Each ACD input has a 10kΩ resistor in parallel to ground for voltage division. Pairing the ADC with RJ45 breakouts means all sensors can be mounted on an opposite wall, with a single CAT5 cable connected back to the Pi.
+Raspberry Pi does not have an Analog to Digital Converter (ADC) built in. This means that reading analog sensors is not possible without an external ADC. This project uses a 32 channel I2C ADC to read each sensor individually. Each ADC input has a 10kΩ resistor in parallel to ground for voltage division. Pairing the ADC with RJ45 breakouts means all sensors can be mounted on an opposite wall, with a single CAT5 cable connected back to the Pi.
 
 <img src="/images/sensorsTB.JPG" width=50%>
 
